@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Web </title>
+    <script src="./checkedForm.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return checkrequired(this)">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="requiredname"></td>
+                </tr>
+                <tr>
+                    <td>E‐mail:</td>
+                    <td><input type="text" name="requiredemail"></td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>
+                        <select name="requiredhobby">
+                            <option value="" selected="">Pick an option!</option>
+                            <option value="1">Listen Music</option>
+                            <option value="2">Watch Movie</option>
+                            <option value="3">Play Game</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comments:</td>
+                    <td><textarea name="comments"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+    </form>

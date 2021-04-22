@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Test Input/Output on Website</title>
+</head>
+<body>
+    <script>
+        let dayUserInput = prompt('What day is today ?')
+        let day = dayUserInput.toLowerCase()
+        switch (day) {
+            case 'monday','วันจันทร์':
+                console.log('Today is Monday(Yellow)')
+                alert('Today is Monday(Yellow)')
+                document.write('Today is Monday(Yellow)')
+                break
+            case 'tuesday':
+                console.log('Today is Tuesday(Pink)')
+                alert('Today is Tuesday(Pink)')
+                document.write('Today is Tuesday(Pink)')
+                break
+            case 'wednesday':
+                console.log('Today is Wednesday(Green)')
+                alert('Today is Wednesday(Green)')
+                document.write('Today is Wednesday(Green)')
+                break
+            case 'sunday':
+                console.log('Today is Sunday(Red)')
+                alert('Today is Sunday(Red)')
+                document.write('Today is Sunday(Red)')
+                break
+            default:
+                console.log('It is not a week day.')
+                alert('It is not a week day.')
+                document.write('It is not a week day.')
+        }
+    </script>
+</body>
+</html>

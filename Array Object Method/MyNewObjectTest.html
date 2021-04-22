@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var person = new Object();
+        person.firstname = "Somchai";
+        person.lastname = "Loveprogramming";
+        person.age = 39;
+        person.eyecolor = "brown";
+        document.write(person.firstname + " is " + person.age + " years old.");
+
+        var txt = " ";
+        var people = { fname: "Aj.NesT", lname: "the Series", age: 33 + " yesrs old." };
+        for (x in people) { 
+            txt += people[x]+ " "; 
+        }
+        document.write("<br>",txt);
+    </script>
+</body>
+</html>
